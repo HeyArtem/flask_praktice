@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts_uai</title>
+</head>
+<body>
+    <h1> Страница с контактами</h1>
+    <ul>
+        <li>
+            <a href="/main">Главнейшая страница УИИ</a>
+        </li>
+        <li>
+            <a href="/contacts">Контакты УИИ</a>
+        </li>
+    </ul>
+
+    <!-- вар 1 -->
+    <!-- <ul>
+        <li>
+            Avto: {{ model }}
+        </li>
+        <li>
+            Price: {{ price }}
+        </li>
+    </ul> -->
+
+    <!-- вар 2, передаю данные в dict (app_uia.py) -->
+    <ul>
+        <li>
+            Avto: {{ data['model'] }}
+        </li>
+        <li>
+            Price: {{ data['price'] }}
+        </li>
+    </ul>
+    
+</body>
+</html>
