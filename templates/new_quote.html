@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}
+    New quote
+{% endblock %}
+
+{% block body %}
+    <h1>New quote</h1>
+    <div>
+        <hr>
+            <h2>{{data.id}} {{data.text}}</h2>            
+            <h2>{{data.author}}</h2>    
+        <hr>
+    </div>
+    <a href="/quotes">all quotes</a>    
+{% endblock %}
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New quote</title>
+</head>
+<body>
+    <h1>New quote</h1>
+    <div>
+        <br>
+        <h2>{{data.id}} {{data.text}}</h2>            
+        <h2>{{data.author}}</h2>    
+        <hr>
+    </div>
+    <a href="/quotes">all quotes</a>
+    
+</body>
+</html> -->

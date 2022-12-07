@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Main page
+{% endblock %}
+
+{% block body %}
+
+
+
+<div>
+    <h1>Main page</h1>
+        <div  class="class1">
+            {% for quote in data %}
+                <hr>
+                    <h2>{{quote.id}} {{quote.text}}</h2>            
+                    <h2>{{quote.author}}</h2>    
+                <hr>
+            {% endfor %}
+        </div>
+
+        <div class="class2">
+            <form action="/quotes_form" method="post">
+                <input type="text" name="author">
+                <input type="text" name="text">
+                <button type="submit">SEND</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
